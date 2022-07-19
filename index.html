@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SET Kártyajáték</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>SET</h1>
+      <a href="rules.html">Játékszabályok</a> <br /><br />
+      <label>Játékosok száma (1-10):</label>
+      <input type="number" id="player-count" min="1" max="10" value="1" />
+      <button id="choose">Választ</button><br /><br />
+      <div id="players"></div>
+      <br />
+      <label>Játékmód: </label>
+      <input
+        type="radio"
+        name="gamemode"
+        value="training"
+        id="training"
+        checked
+      />
+      <label>Gyakorló</label>
+      <input
+        type="radio"
+        name="gamemode"
+        value="competition"
+        id="competition"
+      />
+      <label>Verseny</label><br /><br />
+
+      <div id="settings">
+        <h2>Egyéb beállítások</h2>
+        <label>"Van-e SET?" gomb </label
+        ><input type="checkbox" name="SET-checker" id="SET-checker" /><br />
+        <label>"Hol van SET?" gomb </label
+        ><input type="checkbox" name="SET-shower" id="SET-shower" /><br />
+        <label>3 lapos kiegészítés: </label
+        ><input
+          type="radio"
+          name="cards"
+          value="automatically"
+          id="automatically"
+          checked
+        /><label> Automatikus</label
+        ><input
+          type="radio"
+          name="cards"
+          value="separately"
+          id="separately"
+        /><label> Külön gomb</label> <br /><br /><br />
+      </div>
+      <button id="start">Start</button>
+    </div>
+    <div id="game">
+      <div id="cardCount"></div>
+      <ul id="names"></ul>
+      <br />
+      <div id="buttons">
+        <button id="hasSET">Van-e SET?</button><br />
+        <button id="showSET">Hol van SET?</button><br />
+        <button id="moreSET">Plusz 3 lap</button>
+      </div>
+      <div id="b-center">
+        <button id="set">SET!</button>
+      </div>
+      <table></table>
+    </div>
+    <div id="end">
+      <h1>Pontok</h1>
+      <ul id="rang"></ul>
+      <br />
+      <div id="time"></div>
+      <br />
+      <div id="center"><a href="index.html">Vissza a nyitólapra</a></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

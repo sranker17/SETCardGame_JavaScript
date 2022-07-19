@@ -1,0 +1,59 @@
+body{
+    background-image: url('green.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1, h2{
+    text-align:center;
+}
+
+h1{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+img{
+    width: 120px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    width: 120px;
+}
+
+#rang{
+    display: table;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+#main, #center, #b-center, #cardCount, #time{
+    width: 100%;
+    text-align: center;
+}
+
+#cardCount {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+#main, #game, #end, #rules{
+    background-color: aliceblue;
+    width: 85%;
+    min-width: 100px;
+    max-width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#names{ 
+    list-style-type: none;
+}
